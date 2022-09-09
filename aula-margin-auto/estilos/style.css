@@ -1,0 +1,25 @@
+/* todos os elementos com margin, padding zerados e alterando a forma do cálculo
+ padrão do box para considerar a altura e largura do elemento contando o 'padding' e o 'border' */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* tamanho mínimo de altura de 300px */
+.generic-section {
+    min-height: 300px;
+}
+
+/* cor de fundo */
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
