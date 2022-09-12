@@ -1,0 +1,48 @@
+/* importando font do site do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* todos os elementos com margin, padding zerados e alterando a forma do cálculo
+ padrão do box para considerar a altura e largura do elemento contando o 'padding' e o 'border',
+ e configuração da font que foi importada com o @import do site Google Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* tamanho mínimo de altura de 300px e um padding de 40px em cima e embaixo e 20px nas laterais */
+.generic-section {
+    min-height: 300px;
+    padding: 40px 20px;
+}
+
+/* cores de fundo */
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+/* definindo o tamanho do h2 para 32px */
+h2 {
+    font-size: 32px;
+}
+
+/* definindo o tamanho do parágrafo para 24px */
+p {
+    font-size: 24px;
+}
+
+/* largura padrão de 100%, definindo uma largura maxima de 960px e centralizando com o margin "0" "auto" */
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}

@@ -1,0 +1,102 @@
+/* importando font do site do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* todos os elementos com margin, padding zerados e alterando a forma do cálculo
+ padrão do box para considerar a altura e largura do elemento contando o 'padding' e o 'border',
+ e configuração da font que foi importada com o @import do site Google Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* estilizando a tag "a" e também quando passa o mouse por cima, tirando o sublinhado e cor setada para "unset" sem cor */
+a, a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+/* tamanho mínimo de altura de 300px e um padding de 40px em cima e embaixo e 20px nas laterais */
+.generic-section {
+    min-height: 300px;
+    padding: 40px 20px;
+}
+
+/* cores de fundo */
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+/* definindo o tamanho do h2 dentro da class generic-section para 32px */
+.generic-section  h2 {
+    font-size: 32px;
+}
+
+/* definindo o tamanho do parágrafo dentro da class generic-section para 32px */
+.generic-section p {
+    font-size: 24px;
+}
+
+/* largura padrão de 100%, definindo uma largura maxima de 960px e centralizando com o margin "0" "auto" */
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* definindo uma altura maxima de 200px com a cor de fundo preto e tudo que estiver no footer vai ficar com a cor branco como padrão definida,
+display definido como flex e conteudo centralizados com aling-items "center" */
+footer {
+    padding: 40px 20px;
+    min-height: 200px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}   
+
+
+/* definindo o display como flex, transformando em uma coluna com flex-direction e centralizando a coluna com align-items*/
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* alterando o tamanho da fonte h2 para 40px e colocando uma margem com margin-bottom de 30px */
+.logo h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* definindo a cor do span para laranja */
+.logo h2 span {
+    color: rgb(255, 128, 23);
+}
+
+/* todo texto com tag "p" vai ficar centralizado com text-align */
+.logo p {
+    text-align: center;
+}
+
+/* definindo a tag "a" que está dentro da class "footer-links-container" como display block e texto centralizado com text-align */
+.footer-links-container a {
+    display: block;
+    text-align: center;
+}
+
+/* conteudo do footer definido com display "flex" com espaço entre eles e itens centralizados*/
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
