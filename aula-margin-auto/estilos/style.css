@@ -6,12 +6,13 @@
     box-sizing: border-box;
 }
 
-/* tamanho mínimo de altura de 300px */
+/* tamanho mínimo de altura de 300px e um padding de 40px em cima e embaixo e 20px nas laterais */
 .generic-section {
     min-height: 300px;
+    padding: 40px 20px;
 }
 
-/* cor de fundo */
+/* cores de fundo */
 .bg-blue {
     background-color: blue;
 }
@@ -22,4 +23,21 @@
 
 .bg-yellow {
     background-color: yellow;
+}
+
+/* definindo o tamanho do h2 para 32px */
+h2 {
+    font-size: 32px;
+}
+
+/* definindo o tamanho do parágrafo para 24px */
+p {
+    font-size: 24px;
+}
+
+/* largura padrão de 100%, definindo uma largura maxima de 960px e centralizando com o margin "0" "auto" */
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
 }
