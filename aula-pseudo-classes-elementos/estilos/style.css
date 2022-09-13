@@ -11,18 +11,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* tamanho mínimo de altura de 300px e um padding de 40px em cima e embaixo e 20px nas laterais */
+/* tamanho mínimo de altura de 300px e um padding de 40px em cima e embaixo e 20px nas laterais com sombra na borda */
 .generic-section {
     min-height: 300px;
     padding: 40px 20px;
+    box-shadow: 0px -2px 50px rgba(0, 0, 0, 0.25);
 }
 
 .bg-gray {
     background-color: rgb(240, 240, 240);
 }
 
-.bg-red {
-    background-color: red;
+.bg-white-clean {
+    background-color: #fff;
 }
 
 /* definindo o tamanho do h2 dentro da class generic-section para 32px */
@@ -30,7 +31,7 @@
     font-size: 32px;
 }
 
-/* definindo o tamanho do parágrafo dentro da class generic-section para 24px */
+/* definindo o tamanho do parágrafo dentro da class generic-section para 32px */
 .generic-section p {
     font-size: 24px;
 }
@@ -44,15 +45,13 @@
 
 /* definindo a cor da div form-card para branco, adicionando um padding de 20px, largura maxima de 600px e uma borda arredondada de 10px, 
 também podemos colocoar borda só de um lado no elemento devemos seguir o esquema dos valores que fica em sentindo horario
-exemplo: ¹ 0, = top | ² 0, = rigth | ³ 0, = bottom | ⁴ 0, = left ,
-também uma sombra preta com alpha de 0.25 e uma borda solida de 1px cinza*/
+exemplo: ¹ 0, = top | ² 0, = rigth | ³ 0, = bottom | ⁴ 0, = left */
 .form-card {
     background-color: #fff;
     padding: 20px;
     max-width: 600px;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 1px #999 solid;
 }
 
 /* definindo o display para flex da tag form que está na class form-card e transformando em uma coluna com o flex-direction*/
@@ -60,16 +59,34 @@ também uma sombra preta com alpha de 0.25 e uma borda solida de 1px cinza*/
     display: flex;
     flex-direction: column;
 }
-
-/* tirando a borda do input que está dentro do form com o border, adicionando uma cor de fundo cinza claro com altura de 50px e um margin-bottom de 20 px */
-form input {
-    border: none;
-    background-color: #ddd;
+ 
+/* input do form com altura de 50px uma margem embaixo de 20px sem borda no input com a cor de fundo branca, borda de 8px, padding de 15px para não
+ficar colado no input e fonte de 20px */
+.form-card form input {
     height: 50px;
     margin-bottom: 20px;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 20px;
 }
 
-/* mudando a cor da borda para cinza ao clicar no input do form com o "outline"  */
-form input:focus {
-    outline: 1px #999 solid;
+/* pseudo elemento :: mundando a cor doo placeholder */
+.form-card form input::placeholder {
+    color:rgba(0, 0, 0, 0.1);
+}
+
+/* botão do form com altura de 50px sem borda no botão com borda de 5px, cor de fundo cinza escuro e tamanho da fonte 18px */
+.form-card form button {
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(75, 75, 75);
+    font-size: 18px;
+}
+
+/* pseudo classe : ao passar o mouse em cima do botão, vai mudar a cor deixando mais claro */
+.form-card form button:hover {
+    background-color: rgb(129, 129, 129);
 }

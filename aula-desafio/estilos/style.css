@@ -1,0 +1,18 @@
+:root {
+    --main-color: #222374;
+    --white-color: #fff;
+    --red-color: #f03c42;
+    --black-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    min-height: 15vh;
+    background-color: var(--red-color);
+}

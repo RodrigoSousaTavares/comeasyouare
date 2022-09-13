@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --main-color: #ff8800;
+    --secondary-color: #000;
+    --dark-gray: #666;
+    --light-gray: #ddd;
+    --color-white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+/* vh = viewport height, header está com 10vh que é 10% do viewport da página */
+header {
+    height: 10vh;
+    background-color: var(--secondary-color);
+}
+
+/* calc() usado para calcular a largura de um elemento, abaixo está sendo usado o calculo para utilizar 100% de altura menos 200px */
+main {
+    min-height: calc(100vh - 200px);
+}
+
+.generic-section {
+    min-height: 300px;
+    padding: 60px 20px;
+}
+
+.bg-white {
+    background-color: var(--color-white);
+}
+
+.bg-gray {
+    background-color: var(--light-gray);
+}
+
+.generic-section  h2 {
+    font-size: 32px;
+    color: var(--main-color);
+}
+
+.generic-section p {
+    font-size: 24px;
+    color: var(--dark-gray);
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.buttons-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+/* vw = viewport width, o botão está com 30vw que é 30% do viewport do botão da página */
+.link-button {
+    width: 30vw;
+    height: 60px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    color: var(--color-white);
+}
+
+footer {
+    height: 200px;
+    background-color: var(--main-color);
+}
