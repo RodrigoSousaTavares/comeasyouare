@@ -45,18 +45,31 @@
 /* definindo a cor da div form-card para branco, adicionando um padding de 20px, largura maxima de 600px e uma borda arredondada de 10px, 
 também podemos colocoar borda só de um lado no elemento devemos seguir o esquema dos valores que fica em sentindo horario
 exemplo: ¹ 0, = top | ² 0, = rigth | ³ 0, = bottom | ⁴ 0, = left ,
-também uma sombra preta com alpha de 0.25 e uma borda solida de 2px vermelha*/
+também uma sombra preta com alpha de 0.25 e uma borda solida de 1px cinza*/
 .form-card {
     background-color: #fff;
     padding: 20px;
     max-width: 600px;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 2px red solid;
+    border: 1px #999 solid;
 }
 
 /* definindo o display para flex da tag form que está na class form-card e transformando em uma coluna com o flex-direction*/
 .form-card form {
     display: flex;
     flex-direction: column;
+}
+
+/* tirando a borda do input que está dentro do form com o border, adicionando uma cor de fundo cinza claro com altura de 50px e um margin-bottom de 20 px */
+form input {
+    border: none;
+    background-color: #ddd;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+/* mudando a cor da borda para cinza ao clicar no input do form com o "outline"  */
+form input:focus {
+    outline: 1px #999 solid;
 }
