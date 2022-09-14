@@ -41,7 +41,7 @@ a, a:hover {
     font-size: 32px;
 }
 
-/* definindo o tamanho do parágrafo dentro da class generic-section para 32px */
+/* definindo o tamanho do parágrafo dentro da class generic-section para 24px */
 .generic-section p {
     font-size: 24px;
 }
