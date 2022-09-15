@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+/* variaveis cores */
 :root {
     --color-red: #f03c42;
     --color-yellow: #fff964;
     --color-white: #fff;
     --bg-light-gray: #e5e5e5;
     --text-gray: #5e5e5e;
+    --text-green: #02B814;
 }
 
+a, a:hover {
+    color: unset;
+    text-decoration: none;
+}
+
+/* todos os elementos da página */
 * {
     margin: 0;
     padding: 0;
@@ -15,16 +23,114 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* header com 70px de altura, cor vermelho alinhado ao centro */
 header {
-    
-}
-
-.bg-red {
     background-color: var(--color-red);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding:0 15px ;
 }
 
+footer {
+    height: 120px;
+    background-color: var(--color-red);
+    color: var(--color-yellow);
+    display: flex;
+    align-items: center;
+    padding:0 15px ;
+}
+
+/* h1 vermelho centralizado com tamanho de 24px */
+nav h1 {
+    color: var(--color-yellow);
+    text-align: center;
+    font-size: 24px;
+}
+
+/* classe container centralizado com tamanho máximo de 960px */
 .container {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+}
+
+/* 20px na vertical, 0 na lateral e cor de fundo cinza claro */
+#pizzas {
+    padding: 20px 15px;
+    background-color: var(--bg-light-gray);
+}
+
+/* 40px na vertical, 0 na lateral e cor de fundo branca */
+#comments {
+    padding: 40px 15px;
+    background-color: var(--color-white);
+}
+
+/* h2 centralizado, tamanho da fonte de 32px e cor cinza escuro */
+#comments h2{
+    text-align: center;
+    font-size: 32px;
+    color: var(--text-gray);
+    margin: 20px;
+}
+
+/* imagem com borda lado esquerdo e 20% da imagem  */
+.pizza-card img {
+    width: 20%;
+    border-radius: 12px 0px 0px 12px;
+}
+
+/* utilizando o display-flex na seção e uma margem de 20px na vertical e 0 na lateral */
+.pizza-card {
+    display: flex;
+    margin: 20px 0;
+}
+
+/* cor de fundo branca, borda no lado direito, padding 15px, utilizando display flex, direção coluna e espaço entre eles */
+.pizza-card-description {
+    background-color: var(--color-white);
+    border-radius: 0px 12px 12px 0px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* cor da fonte cinza escuro e de 24px */
+.pizza-card-description h3 {
+    color: var(--text-gray);
+    font-size: 24px;
+}
+
+/*  */
+.pizza-card-description p {
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+.pizza-card-description h4 {
+    color: var(--text-green);
+    font-size: 24px;
+}
+
+.card-comment {
+    padding: 25px 20px;
+    background-color: var(--color-yellow);
+    color: var(--color-red);
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content a {
+    font-size: 16px;
+}
+
+.footer-content address {
+    font-size: 16px;
 }
