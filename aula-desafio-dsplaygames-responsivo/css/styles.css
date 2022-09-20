@@ -1,10 +1,49 @@
+/* ELEMENTS */
+
 :root {
     --color-green: #38AF90;
     --color-light-gray: #797979;
     --color-pink: #DD7E92;
     --color-dark-gray: #383838;
+    --color-white: #FFFF;
 }
 
 * {
     box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CLASSES, IDS */
+
+.nav-container {
+    background-color: var(--color-green);
+    height: 90px;
+    width: 100%;
+}
+
+.nav-main {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.nav-main a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.menu-items {
+    list-style: none;
+    color: var(--color-white);
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;   
 }
