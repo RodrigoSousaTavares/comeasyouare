@@ -74,10 +74,6 @@ html, body {
     text-align: center;
 }
 
-.cards {
-    
-}
-
 .title-card {
     color: var(--color-green);
     font-size: 16px;
@@ -197,7 +193,13 @@ html, body {
     margin: 0 0 10px 0;
 }
 
+.form-container {
+    padding: 10px;
+}
+
 .form-subscribe {
+    background-color: var(--color-light-gray);
     display: flex;
     flex-direction: column;
+    border-radius: 8px;
 }
