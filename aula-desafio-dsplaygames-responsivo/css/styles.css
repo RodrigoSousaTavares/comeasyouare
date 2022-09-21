@@ -19,6 +19,18 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }
 
+footer {
+    height: 300px;
+    background-color: #383838;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    font-size: 16px;
+}
+
 /* CLASSES, IDS */
 
 .nav-container {
@@ -110,6 +122,16 @@ html, body {
     margin-bottom: 3px;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+ }
+
+
+
 .more {
     color: var(--color-pink);
     margin: 5px 0 5px 0;
@@ -137,8 +159,8 @@ html, body {
 .game-container {
     background-color: var(--color-light-gray);
     display: flex;
-    flex-direction: column;
-    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .title-game-news {
@@ -146,7 +168,7 @@ html, body {
     font-size: 24px;
     font-weight: 700;
     text-align: center;
-    margin: 40px;
+    margin: 40px 100% 40px 100%;
 }
 
 .title-game {
@@ -172,6 +194,7 @@ html, body {
     border-radius: 0 0 8px 8px;
     padding: 0px 15px 10px 15px;
     margin-bottom: 30px;
+    min-width: 300px;
 }
 
 .game-description {
@@ -202,4 +225,91 @@ html, body {
     display: flex;
     flex-direction: column;
     border-radius: 8px;
+}
+
+.input-subscribe {
+    width: 280px;
+    height: 50px;
+    padding: 15px 0 15px 25px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-gray);
+    border-radius: 4px;
+}
+
+.title-form {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-gray);
+}
+
+.button-send {
+    width: 244px;
+    height: 67px;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.button-clear {
+    width: 244px;
+    height: 67px;
+    background-color: var(--color-white);
+    color: #DD7E92;
+    border-radius: 8px;
+    border: 2px solid var(--color-pink);
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check-question {
+    color: var(--color-gray);
+}
+
+.checkbox-question {
+    color: var(--color-gray);
+}
+
+.question-form {
+    color: var(--color-gray);
+}
+
+.footer-content {
+    color: var(--color-white);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: unset;
+}
+
+.copyright {
+    margin: 40px 0 40px 0;
+}
+
+.privacy {
+    cursor: pointer;
+}
+
+.terms {
+    cursor: pointer;
 }
