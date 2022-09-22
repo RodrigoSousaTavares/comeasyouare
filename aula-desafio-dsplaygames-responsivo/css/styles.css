@@ -62,6 +62,10 @@ form {
     visibility: hidden;
 }
 
+.menu-items img {
+    visibility: visible;
+}
+
 .nav-brand {
     font-size: 18px;
     font-weight: 700;
@@ -331,10 +335,19 @@ form {
 }
 
 @media (min-width: 768px) {
+    .nav-main {
+        margin-left: 13%;
+        margin-right: 13%;
+    }
+    
     .menu-items {
         visibility: visible;
         font-size: 14px;
         font-weight: 500;
+    }
+
+    .menu-items li {
+        margin: 20px;
     }
 
     .input-subscribe {
@@ -383,7 +396,7 @@ form {
     .footer-content {
         display: flex;
         flex-direction: row;
-        margin-top: 50px;
+        margin-top: 70px;
         margin-left: 70px;
         margin-right: 70px;
     }
